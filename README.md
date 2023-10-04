@@ -14,7 +14,6 @@ Install and run Threema desktop app in a Docker container.
   - [Workspace](#workspace)
   - [Bash Alias](#bash-alias)
 - [FAQ and Common Problems](#faq-and-common-problems)
-  - [Installation Loop](#installation-loop)
   - [Got Permission Denied](#got-permission-denied)
   - [Remove Container](#remove-container)
   - [Generic Docker Issues](#generic-docker-issues)
