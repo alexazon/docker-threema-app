@@ -4,7 +4,7 @@ Install and run Threema desktop app in a Docker container.
 
 `Caution: This is still experimental!`
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/alexazon/threema-app/build.yml)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/alexazon/docker-threema-app/build.yml)
 ![GitHub](https://img.shields.io/github/license/alexazon/docker-threema-app)
 
 # Table of Contents
