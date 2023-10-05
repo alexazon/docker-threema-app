@@ -18,10 +18,10 @@ RUN apt-get -y update
 RUN apt-get -y upgrade
 
 # Get dependencies
-RUN apt-get -y install wget
-RUN apt-get -y install libgtk-3-0 libnotify4 libnss3 libxtst6 xdg-utils libatspi2.0-0 libdrm2 libgbm1 libxcb-dri3-0 kde-cli-tools trash-cli libglib2.0-bin
+RUN apt-get -y install dbus libgtk-3-0 libnotify4 libnss3 libxtst6 xdg-utils libatspi2.0-0 libdrm2 libgbm1 libxcb-dri3-0 kde-cli-tools trash-cli libglib2.0-bin
 
 # Get Threema
+RUN apt-get -y install wget
 RUN wget $THREEMA_DL$THREEMA_DEB -P /tmp
 RUN dpkg -i /tmp/$THREEMA_DEB
 
@@ -31,4 +31,4 @@ USER threema
 WORKDIR $THREEMA_HOME
 
 # Start Threema
-ENTRYPOINT ["threema", "-no-sandbox"]
+ENTRYPOINT ["threema", "--no-sandbox", "--disable-gpu"]
